@@ -1,0 +1,127 @@
+@import "../scss/index.scss";
+
+.login{
+    //background-color: $border-light;
+    background-image: url("../assets/gayFriendsLogin.jpg");
+    background-color: $font-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+   
+    //height: 100vh;
+}
+
+.content{
+    background: rgba(0, 0, 0, 0.781); // transparencia de toda la imagen de fondo
+
+    display: flex;
+    align-self: center center;
+    flex-direction: column;
+    align-items: center;    
+    //justify-content: center;  
+    min-height: 100vh;
+
+    .content-form{
+
+
+        height: 32rem;
+        width: 28rem;
+        background: rgba(167, 21, 21, 0.561);
+        //background: rgba(1, 1, 83, 0.493);
+        box-shadow: 0 50px 40px -20px rgba(0, 0, 0, 0.8);
+
+        display:flexbox;
+        position:relative;
+        //min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
+        margin-top: 4rem;
+        border-radius: 1rem;
+
+        
+        .ant-form-item{
+            &:nt-child(3),
+            &:last-of-type{
+                margin: 0;
+            }
+        }
+
+        &__input{
+
+            
+
+            input{
+                font-size:  0em + 20px / $defatulFontZise;
+                padding: 20px 20px 20px 40px;
+
+
+                &:focus{
+                    border-color: $primary-color;
+                    box-shadow: none;
+                    
+                }
+            }
+        }
+
+        &__button{
+            width: 80%;
+            font-size: 0em + 24px /$defatulFontZise;
+            background-color: $primary-color;
+            color: $font-dark;
+            font-weight: 600;
+            height: 42px;
+            border: none;
+        
+                &:hover{
+                    background-color:$primary-color-hover ;
+                    color: $font-light;
+                    padding: 0px 40px 40px 40px;
+                    width: 100%;
+                    text-align: center;
+                    align-content: center;
+                    align-items: center;
+                }
+                &:focus,
+                &:active{
+                    background-color: $font-dark;
+                    color:$font-light;
+                }
+
+        }
+
+        &__button2{
+            width: 80%;
+            font-size: 0em + 24px /$defatulFontZise;
+            background-color: brown;
+            color: $font-light;
+            font-weight: 600;
+            height: 42px;
+            border: none;
+
+        
+                &:hover{
+                    background-color:$primary-color-hover ;
+                    color: $font-light;
+                    padding: 0px 40px 40px 40px;
+                    width: 100%;
+                    text-align: center;
+                    align-content: center;
+                    align-items: center;
+                }
+                &:focus,
+                &:active{
+                    background-color: $primary-color;
+                    color:$font-light;
+                }
+
+        }
+
+        p{
+            color: white;
+        }
+
+    }
+
+}
